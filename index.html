@@ -1,43 +1,76 @@
-
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Story Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My News Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
 
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#stories">Stories</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
 
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#stories">Stories</a></li>
-        <li><a href="#about">About</a></li>
-    </ul>
-</nav>
+    <!-- Home Section -->
+    <div class="container" id="home">
 
-<div class="container" id="home">
-    <h1>Welcome to My News Website</h1>
-    <p>This is a sample story page.</p>
+        <h1>Welcome to My News Website</h1>
 
-    <button
-    onclick="document.getElementByID('full story').scrollintoView({behaviour:'smooth'})">Read More</button>
-</div>
-<section id="stories" class="container">
-    <h2>Latest Stories</h2>
-    <h3>Welcome to My News Website</h3>
-    <p>Explore the latest news and stories here.</p>
-    <a href="#full-story">Read Full Story</a>
-</section>
+        <p>This is a sample story page.</p>
 
-<section id="full-story" class="container">
-    <h2>Welcome to My News Website</h2>
-    <p>This is the full story of our sample news article.</p>
-</section>
+        <button type="button"
+            onclick="document.getElementById('full-story').scrollIntoView({behavior:'smooth'})">
+            Read More
+        </button>
 
-<section id="about" class="container">
-    <h2>About Us</h2>
-    <p>Welcome to our news website. We share news and stories with our readers.</p>
-</section>
+    </div>
+
+    <!-- Stories Section -->
+    <section id="stories" class="container">
+
+        <h2>Latest Stories</h2>
+
+        <h3>Welcome to My News Website</h3>
+
+        <p>Explore the latest news and stories here.</p>
+
+        <a href="#full-story">Read Full Story</a>
+
+    </section>
+
+    <!-- Full Story Section -->
+    <section id="full-story" class="container">
+
+        <h2>Welcome to My News Website</h2>
+
+        <p>
+            This is the full story of our sample news article.
+            Stay connected with us to explore the latest news,
+            updates and interesting stories.
+        </p>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+
+        <h2>About Us</h2>
+
+        <p>
+            Welcome to our news website.
+            We share news and stories with our readers.
+            Our aim is to keep everyone informed and updated.
+        </p>
+
+    </section>
 
 </body>
 </html>
