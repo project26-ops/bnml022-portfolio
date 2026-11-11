@@ -9,18 +9,35 @@
 
 <nav>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Stories</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#stories">Stories</a></li>
+        <li><a href="#about">About</a></li>
     </ul>
 </nav>
 
-<div class="container">
+<div class="container" id="home">
     <h1>Welcome to My News Website</h1>
     <p>This is a sample story page.</p>
 
-    <button>Read More</button>
+    <button
+    onclick="document.getElementByID('full story').scrollintoView({behaviour:'smooth'})">Read More</button>
 </div>
+<section id="stories" class="container">
+    <h2>Latest Stories</h2>
+    <h3>Welcome to My News Website</h3>
+    <p>Explore the latest news and stories here.</p>
+    <a href="#full-story">Read Full Story</a>
+</section>
+
+<section id="full-story" class="container">
+    <h2>Welcome to My News Website</h2>
+    <p>This is the full story of our sample news article.</p>
+</section>
+
+<section id="about" class="container">
+    <h2>About Us</h2>
+    <p>Welcome to our news website. We share news and stories with our readers.</p>
+</section>
 
 </body>
 </html>
